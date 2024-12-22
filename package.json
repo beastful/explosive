@@ -1,0 +1,30 @@
+{
+  "name": "@voxelful/explosive",
+  "private": false,
+  "version": "0.0.2",
+  "module": "dist/index.es.js",
+  "main": "dist/index.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "files": [
+    "/dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.1"
+  },
+  "dependencies": {
+    "@voxelful/multimediator": "^0.0.1"
+  }
+}
